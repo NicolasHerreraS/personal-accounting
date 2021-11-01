@@ -17,6 +17,8 @@ import { CreateTransactionComponent } from './create-transaction/create-transact
 import { CreateCategoryComponent } from './create-category/create-category.component';
 import { EditCategoryComponent } from './edit-category/edit-category.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { AccountListComponent } from './account-list/account-list.component';
+import { TransactionListComponent } from './transaction-list/transaction-list.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { NavbarComponent } from './navbar/navbar.component';
     CreateTransactionComponent,
     CreateCategoryComponent,
     EditCategoryComponent,
-    NavbarComponent
+    NavbarComponent,
+    AccountListComponent,
+    TransactionListComponent
   ],
   imports: [
     BrowserModule,
