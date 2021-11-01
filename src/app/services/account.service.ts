@@ -8,7 +8,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class AccountService {
   
-  API_URL = "http://uam.jdcorrea.me/movies/web/movie";
+  API_URL = "http://uam.jdcorrea.me/pfe-personal-accounting/web/accounts";
 
   constructor() { }
 }
