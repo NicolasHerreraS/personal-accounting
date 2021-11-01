@@ -1,1 +1,21 @@
-<p>account-list works!</p>
+<div class="container-fluid">
+    <ul class= "card-columns">
+        <li class= "card bg-dark text-light m-2 p-2" *ngFor="let account of accounts">
+          <div>
+            <div class= "card-title"><h3>{{ account.name }} / {{ account.type }}</h3></div>
+            <ul class="card-text">
+                <li>Balance: {{ account.balance} </li>
+                <li><a href="/accounts/{{ account.id }}">Más Información</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class= "card bg-dark text-light m-2 p-2">
+            <div class= "card-title"><h3>Cuenta de Prueba / Ahorros</h3></div>
+            <ul class="card-text">
+                <li>Balance: 0 </li>
+                <li><a href="/accounts/1">Más Información</a></li>
+            </ul>
+        </li>
+                      
+    </ul>
+</div>

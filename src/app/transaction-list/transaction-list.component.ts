@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Transaction } from '../transaction';
 
 @Component({
   selector: 'app-transaction-list',
@@ -6,8 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./transaction-list.component.css']
 })
 export class TransactionListComponent implements OnInit {
-
-  constructor() { }
+  transactions: Transaction[]
+  constructor() {
+    this.transactions = [];
+   }
 
   ngOnInit(): void {
   }
